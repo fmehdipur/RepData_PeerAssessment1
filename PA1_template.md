@@ -1,4 +1,4 @@
-#This markdown file is for the peer assignment 1 of the couarse "Reproducible Research"
+#This markdown file is for the peer assignment 1 of the course "Reproducible Research"
 
 
 ## Loading and preprocessing the data
@@ -6,7 +6,7 @@
 
 
 ```r
-    unzip("./repdata_data_activity.zip")
+    unzip("./activity.zip")
     adata<- read.table("activity.csv", header= TRUE, sep= ",")
 ```
 
@@ -20,7 +20,7 @@
 
 ## What is mean total number of steps taken per day?
 
-1. The total number of steps for each date is calculate and plotted using barplot
+1. The total number of steps for each date is calculated and plotted using barplot
 
 ```r
     t<- aggregate(. ~ date, data= adata, FUN=sum)
@@ -175,3 +175,5 @@ According to the results, the is no difference between the mean of the total num
 ![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
 
 ##The report ends here
+=======
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270

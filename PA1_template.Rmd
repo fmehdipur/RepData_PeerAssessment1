@@ -1,11 +1,11 @@
-#This markdown file is for the peer assignment 1 of the couarse "Reproducible Research"
+#This markdown file is for the peer assignment 1 of the course "Reproducible Research"
 
 
 ## Loading and preprocessing the data
 1. The input data is loaded 
 
 ```{r}
-    unzip("./repdata_data_activity.zip")
+    unzip("./activity.zip")
     adata<- read.table("activity.csv", header= TRUE, sep= ",")
   
 ```
